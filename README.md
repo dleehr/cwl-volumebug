@@ -6,4 +6,4 @@ When workflows include multiple subworkflows as steps, files passed from step 1 
 # Reproducing
 
     $ mkdir $HOME/cwl
-    $ cwl-runner --leave-outputs --tmp-outdir-prefix=$HOME/cwl --tmpdir-prefix=$HOME/cwl volumebug-wrap.cwl volumebug.json
+    $ cwl-runner --tmp-outdir-prefix=$HOME/cwl --tmpdir-prefix=$HOME/cwl volumebug-wrap.cwl volumebug.json
