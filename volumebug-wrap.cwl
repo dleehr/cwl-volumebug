@@ -13,12 +13,18 @@ inputs:
 outputs:
   - id: "#output_file"
     type: File
-    source: "#inner.output_file"
+    source: "#wf2.output_file"
 steps:
-  - id: "#inner"
+  - id: "#wf1"
     run: { import: volumebug.cwl }
     inputs:
-    - { id: "#inner.input_file", source: "#input_file" }
-    - { id: "#inner.output_file_name", source: "#output_file_name" }
+    - { id: "#wf1.input_file", source: "#input_file" }
     outputs:
-    - { id: "#inner.output_file" }
+    - { id: "#wf1.output_file" }
+  - id: "#wf2"
+    run: { import: volumebug.cwl }
+    inputs:
+    - { id: "#wf2.input_file", source: "#wf1.output_file" }
+    - { id: "#wf2.output_file_name", source: "#output_file_name" }
+    outputs:
+    - { id: "#wf2.output_file" }

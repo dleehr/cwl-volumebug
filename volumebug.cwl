@@ -10,6 +10,7 @@ inputs:
     type: File
   - id: "#output_file_name"
     type: string
+    default: 'processed.txt'
 outputs:
   - id: "#output_file"
     type: File
