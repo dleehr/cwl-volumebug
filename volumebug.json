@@ -1,0 +1,7 @@
+{
+  "input_file": {
+    "class": "File",
+    "path" : "volumebug.cwl"
+  },
+  "output_file_name": "volumebug.out"
+}
