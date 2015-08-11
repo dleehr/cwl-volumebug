@@ -2,6 +2,8 @@
 
 class: Workflow
 description: "Testing a volume bug"
+# requirements:
+#   - class: SubworkflowFeatureRequirement
 
 inputs:
   - id: "#input_file"
