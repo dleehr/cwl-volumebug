@@ -12,7 +12,7 @@ inputs:
       position: 1
   - id: "#output_file_name"
     type: string
-    default: 'step1-output.txt'
+    default: 'number-output.txt'
 
 outputs:
   - id: "#output_file"
