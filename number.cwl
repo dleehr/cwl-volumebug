@@ -1,9 +1,9 @@
 #!/usr/bin/env cwl-runner
 
 class: CommandLineTool
-requirements:
-   - class: DockerRequirement
-     dockerImageId: ubuntu:14.04
+# requirements:
+#    - class: DockerRequirement
+#      dockerImageId: ubuntu:14.04
 
 inputs:
   - id: "#input_file"
