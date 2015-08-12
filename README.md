@@ -7,7 +7,7 @@ When workflows include multiple subworkflows as steps, files passed from step 1 
 
 1. Install boot2docker and configure shared folders
 2. `$ mkdir $HOME/cwl`
-3. `$ cwl-runner --tmp-outdir-prefix=$HOME/cwl --tmpdir-prefix=$HOME/cwl volumebug-wrap.cwl volumebug.json`
+3. `$ cwl-runner --tmp-outdir-prefix=$HOME/cwl/ --tmpdir-prefix=$HOME/cwl/ volumebug-wrap.cwl volumebug.json`
 
 # Output
 
